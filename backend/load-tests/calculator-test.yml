@@ -1,0 +1,54 @@
+
+config:
+  target: "http://localhost:4000"
+  phases:
+    - duration: 30          # Total test duration in seconds
+      arrivalRate: 3        # Requests per second (RPS)
+  defaults:
+    headers:
+      Content-Type: application/json
+
+scenarios:
+  - name: "Retirement Calculator"
+    flow:
+      - post:
+          url: "/retirement-calculator"
+          json:
+            currentAge: 25
+            retirementAge: 60
+            expectedLifespan: 85
+            monthlyExpense: 30000
+            inflation: 6
+            postretirement: 5
+            preretirement: 10
+
+  - name: "SIP Calculator"
+    flow:
+      - post:
+          url: "/SIP-calculator"
+          json:
+            investment: 5000
+            duration: 20
+            annual: 12
+
+  - name: "Mutual Fund Calculator"
+    flow:
+      - post:
+          url: "/MutualFund-Calculator"
+          json:
+            investment: 100000
+            duration: 10
+            expectedAnnual: 15
+
+  - name: "Financial Independence Calculator"
+    flow:
+      - post:
+          url: "/Financial-calculator"
+          json:
+            currentAge: 25
+            IndependencsAge: 40
+            expectedLifespan: 85
+            currentMonthlyExpenses: 25000
+            expectedInflation: 6
+            postRetirementInvestmentReturn: 5
+            preRetirementInvestmentReturn: 11
