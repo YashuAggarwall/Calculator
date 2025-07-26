@@ -1,0 +1,184 @@
+.retbox{
+    display: flex;
+    width: 100vw;
+    gap: 10px;
+}
+.leftret{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 0px 2px 4px grey;
+}
+
+.rightret{
+    width: 450px;
+    flex-shrink: 0;
+}
+
+.rethead{
+   width: auto;
+    margin-bottom: 30px;
+    height: auto;
+    margin-left: 34px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.pop{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.popp{
+    color: grey;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.corpus{
+    
+    margin-left: 32px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.corpusorange{
+    background-color: #FF6A3D ;
+    margin-top: 20px;
+    margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    width: 95%;
+    border-radius: 5px;
+
+
+}
+
+.estimated{
+    font-size: 24px;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 16px;
+
+
+}
+
+.imagerate{
+    display: flex;
+
+}
+
+.this{    
+    color: white;
+    margin-bottom: 10px;
+    font-size: 21px;
+
+
+}
+
+.corpusamount{
+    font-size: 36px;
+    color: white;
+}
+
+.inputcorpus{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-left: 32px;
+
+}
+
+.retbox2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.retbox2 input{
+    height: 20px;
+    border: none;
+    outline: none;
+    color: #FF6A3D;
+    font-size: 20px;
+    font-weight: 600;
+   width: 150px;
+    text-align: right;
+}
+
+
+.rangeinput{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.what{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.retbox2 span{
+    margin-right: 15px;
+    font-weight:500;
+}
+
+.this1{
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+
+.lkjh{
+    width: 320px;
+}
+
+.dognut{
+        box-sizing: border-box;
+    display: block;
+    height: 300px;
+    width: 300px;
+}
+
+.profithead{
+    text-align: center;
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.asd{
+    color: white;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .retbox{
+        flex-direction: column;
+    }
+    .leftret{
+        width: 100%;
+    }
+    .rightret{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .corpusorange{
+        width: 100%;
+    }
+    .dognut{
+        width: 100%;
+        height: 300px;
+    }
+    .corpus{
+        margin-left: 0PX;
+        width: 100%;
+    }
+    
+}

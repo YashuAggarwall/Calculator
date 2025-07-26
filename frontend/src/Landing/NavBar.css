@@ -1,0 +1,127 @@
+.nav-wrapper {
+    width: 100%;
+    height: 73px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid rgb(250, 246, 246);
+    border: 2px solid transparent;
+}
+
+.ham-burger {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navbar {
+    margin-left: 32px;
+    margin-top: 16px;
+    max-width: 1376px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+}
+
+.main {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 134.95px;
+    height: 32px;
+    gap: 8px;
+}
+
+.SVG {
+    width: 32px;
+    height: 32px;
+}
+
+.name {
+    font-family: 'Plus Jakarta Sans';
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    display: inline-block;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    gap: 32px;
+}
+
+.menu-web .options {
+    width: 498.97px;
+}
+
+.anchor {
+    color: #4B5563;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans';
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.nav-button {
+    background-color: #FF6B4A;
+    color: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+    width: 139px;
+    height: 40px;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+
+    .ham-burger {
+        display: inline-block;
+        margin-right: 25px;
+    }
+
+    .menu-web {
+        display: none;
+    }
+
+    .menu-mobile {
+                position: absolute;
+        top: 5rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        height: auto;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    .menu-mobile .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        height: auto;
+        width: 100%;
+    }
+
+    .navbar {
+        margin-left: 0;
+        width: 100%;
+
+    .m11{
+        margin-top: 2px;
+    }
+
+}
